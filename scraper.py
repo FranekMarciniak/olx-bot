@@ -9,7 +9,7 @@ item = input("Jakiego produktu szukasz: ")
 item.replace(" ", "-")
 city = input("W jakim mieście szukasz: ")
 start_url = "https://www.olx.pl/" + city + "/q-" + item 
-driver = webdriver.Chrome(options=chrome_options)
+driver = webdriver.Chrome()
 driver.get(start_url)
 sleep(1)
 driver.find_element_by_id("onetrust-accept-btn-handler").click()
